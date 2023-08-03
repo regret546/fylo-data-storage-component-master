@@ -6,14 +6,12 @@
 *::after {
   box-sizing: border-box;
 }
-
 /*
     2. Remove default margin
   */
 * {
   margin: 0;
 }
-
 /*
     Typographic tweaks!
     3. Add accessible line-height
@@ -23,7 +21,6 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-
 /*
     5. Improve media defaults
   */
@@ -35,7 +32,6 @@ svg {
   display: block;
   max-width: 100%;
 }
-
 /*
     6. Remove built-in form typography styles
   */
@@ -45,7 +41,6 @@ textarea,
 select {
   font: inherit;
 }
-
 /*
     7. Avoid text overflows
   */
@@ -58,7 +53,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
 /*
     8. Create a root stacking context
   */
@@ -66,32 +60,3 @@ h6 {
 #__next {
   isolation: isolate;
 }
-
-:root {
-  /* Primary Colors */
-  --clr--gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
-  /* Neutral Colors */
-  --clr--pale-blue: hsl(243, 100%, 93%);
-  --clr--grayish-blue: hsl(229, 7%, 55%);
-  --clr--dark-blue: hsl(228, 56%, 26%);
-  --clr--very-dark-blue: hsl(229, 57%, 11%);
-}
-
-:root {
-  /* Font Family */
-  --ff--primary: "Raleway", sans-serif;
-  /* Font Size */
-  --fs--regular: 14px;
-  /* Font Weight */
-  --fw--bold: 400;
-  --fw--very-bold: 700;
-}
-
-body {
-  min-height: 100vh;
-  font-family: var(--ff--primary);
-  background-color: var(--clr--very-dark-blue);
-  color: var(--clr--pale-blue);
-  display: grid;
-  place-items: center;
-}/*# sourceMappingURL=style.css.map */
