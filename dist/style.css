@@ -87,11 +87,26 @@ h6 {
   --fw--very-bold: 700;
 }
 
+html ul {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+}
+
 body {
+  background: url("/images/bg-mobile.png") no-repeat;
+  background-position: top;
+  background-size: 100% 100%;
   min-height: 100vh;
-  font-family: var(--ff--primary);
   background-color: var(--clr--very-dark-blue);
   color: var(--clr--pale-blue);
+  font-family: var(--ff--primary);
+}
+
+.card {
   display: grid;
   place-items: center;
+}
+.card .flex-group {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
