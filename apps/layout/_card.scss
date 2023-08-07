@@ -1,8 +1,42 @@
 .card {
   display: grid;
-  place-items: center;
+  gap: 1rem;
+  max-width: 500px;
 
-  .flex-group {
+  &__header,
+  &__info {
+    background-color: var(--clr--dark-blue);
+    padding: 2rem;
+    text-align: left;
+    border-radius: 0.8rem;
+  }
+
+  &__header {
     display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .logo {
+      img {
+        width: 150px;
+      }
+    }
+    .flex-group {
+      display: flex;
+      gap: 0.5rem;
+
+      li {
+        display: grid;
+        place-items: center;
+        width: 50px;
+        height: 40px;
+        background-color: var(--clr--very-dark-blue);
+        padding: 0;
+        margin: 0;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  &__info {
   }
 }

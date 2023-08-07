@@ -87,6 +87,10 @@ h6 {
   --fw--very-bold: 700;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
 html ul {
   list-style: none;
   text-decoration: none;
@@ -97,7 +101,6 @@ body {
   background: url("/images/bg-mobile.png") no-repeat;
   background-position: top;
   background-size: 100% 100%;
-  min-height: 100vh;
   background-color: var(--clr--very-dark-blue);
   color: var(--clr--pale-blue);
   font-family: var(--ff--primary);
@@ -105,8 +108,39 @@ body {
 
 .card {
   display: grid;
-  place-items: center;
+  gap: 1rem;
+  max-width: 500px;
 }
-.card .flex-group {
+.card__header, .card__info {
+  background-color: var(--clr--dark-blue);
+  padding: 2rem;
+  text-align: left;
+  border-radius: 0.8rem;
+}
+.card__header {
   display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card__header .logo img {
+  width: 150px;
+}
+.card__header .flex-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.card__header .flex-group li {
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 40px;
+  background-color: var(--clr--very-dark-blue);
+  padding: 0;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */

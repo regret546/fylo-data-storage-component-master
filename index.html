@@ -31,22 +31,25 @@
     </style>
   </head>
   <body>
-    <main class="card">
-      <section class="card__header">
-        <img src="/images/logo.svg" alt="Logo" />
-        <ul class="flex-group">
-          <li><img src="/images/icon-document.svg" alt="Document" /></li>
-          <li><img src="/images/icon-folder.svg" alt="Folder" /></li>
-          <li><img src="/images/icon-upload.svg" alt="Upload" /></li>
-        </ul>
-      </section>
-      <section class="card__info">
-        <p>You’ve used 815 GB of your storage</p>
-        <input type="range" min="1" max="1000" value="815" />
-        <div>0GB 1000GB</div>
-        <div>185 GB LEFT</div>
-      </section>
-    </main>
+    <div class="container">
+      <main class="card">
+        <section class="card__header">
+          <div class="logo">
+            <img src="/images/logo.svg" alt="Logo" />
+          </div>
+          <ul class="flex-group">
+            <li><img src="/images/icon-document.svg" alt="Document" /></li>
+            <li><img src="/images/icon-folder.svg" alt="Folder" /></li>
+            <li><img src="/images/icon-upload.svg" alt="Upload" /></li>
+          </ul>
+        </section>
+        <section class="card__info">
+          <p>You’ve used 815 GB of your storage</p>
+          <input type="range" min="1" max="1000" value="815" />
+          <div>185 GB LEFT</div>
+        </section>
+      </main>
+    </div>
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
