@@ -1,10 +1,10 @@
 .card {
   display: grid;
   gap: 1rem;
-  max-width: 500px;
 
   &__header,
   &__info {
+    display: grid;
     background-color: var(--clr--dark-blue);
     padding: 2rem;
     text-align: left;
@@ -12,8 +12,6 @@
   }
 
   &__header {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
     .logo {
       img {

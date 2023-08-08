@@ -59,6 +59,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+ul {
+  list-style: none;
+  text-decoration: none;
+  padding-left: 0;
+}
+
 /*
     8. Create a root stacking context
   */
@@ -91,11 +97,6 @@ html {
   margin: 0;
   padding: 0;
 }
-html ul {
-  list-style: none;
-  text-decoration: none;
-  padding-left: 0;
-}
 
 body {
   background: url("/images/bg-mobile.png") no-repeat;
@@ -109,17 +110,15 @@ body {
 .card {
   display: grid;
   gap: 1rem;
-  max-width: 500px;
 }
 .card__header, .card__info {
+  display: grid;
   background-color: var(--clr--dark-blue);
   padding: 2rem;
   text-align: left;
   border-radius: 0.8rem;
 }
 .card__header {
-  display: flex;
-  flex-direction: column;
   gap: 2rem;
 }
 .card__header .logo img {
