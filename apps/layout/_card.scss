@@ -1,10 +1,15 @@
 .card {
   display: grid;
+  grid-template-columns: minmax(0, 500px);
   gap: 1rem;
+  min-width: 0;
+  max-width: 500px;
+  margin: 1.5rem;
 
   &__header,
   &__info {
     display: grid;
+
     background-color: var(--clr--dark-blue);
     padding: 2rem;
     text-align: left;
@@ -20,6 +25,7 @@
     }
     .flex-group {
       display: flex;
+      flex-wrap: wrap;
       gap: 0.5rem;
 
       li {
@@ -36,5 +42,37 @@
   }
 
   &__info {
+    display: grid;
+    gap: 0.5rem;
+    p {
+      text-align: center;
+      span {
+        font-weight: var(--fw--very-bold);
+      }
+    }
+    &_capacity {
+      display: flex;
+      justify-content: space-between;
+      font-weight: var(--fw--very-bold);
+    }
+    &_freespace {
+      margin-bottom: -70px;
+      margin-inline: auto;
+      padding: 0.7rem;
+      border-radius: 0.8rem;
+      background-color: var(--clr--pale-blue);
+      color: var(--clr--very-dark-blue);
+      h2 {
+        font-size: 36px;
+
+        span {
+          font-weight: var(--fw--very-bold);
+          color: var(--clr--grayish-blue);
+          vertical-align: middle;
+          font-size: 13px;
+          margin-left: 1rem;
+        }
+      }
+    }
   }
 }

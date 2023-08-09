@@ -105,11 +105,16 @@ body {
   background-color: var(--clr--very-dark-blue);
   color: var(--clr--pale-blue);
   font-family: var(--ff--primary);
+  font-size: var(--fs--regular);
 }
 
 .card {
   display: grid;
+  grid-template-columns: minmax(0, 500px);
   gap: 1rem;
+  min-width: 0;
+  max-width: 500px;
+  margin: 1.5rem;
 }
 .card__header, .card__info {
   display: grid;
@@ -126,6 +131,7 @@ body {
 }
 .card__header .flex-group {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 .card__header .flex-group li {
@@ -138,6 +144,40 @@ body {
   margin: 0;
   border-radius: 0.5rem;
 }
+.card__info {
+  display: grid;
+  gap: 0.5rem;
+}
+.card__info p {
+  text-align: center;
+}
+.card__info p span {
+  font-weight: var(--fw--very-bold);
+}
+.card__info_capacity {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw--very-bold);
+}
+.card__info_freespace {
+  margin-bottom: -70px;
+  margin-inline: auto;
+  padding: 0.7rem;
+  border-radius: 0.8rem;
+  background-color: var(--clr--pale-blue);
+  color: var(--clr--very-dark-blue);
+}
+.card__info_freespace h2 {
+  font-size: 36px;
+}
+.card__info_freespace h2 span {
+  font-weight: var(--fw--very-bold);
+  color: var(--clr--grayish-blue);
+  vertical-align: middle;
+  font-size: 13px;
+  margin-left: 1rem;
+}
+
 .container {
   min-height: 100vh;
   display: grid;
