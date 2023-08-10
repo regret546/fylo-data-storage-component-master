@@ -55,6 +55,22 @@
       justify-content: space-between;
       font-weight: var(--fw--very-bold);
     }
+
+    &_range {
+      &_indicator {
+        background-color: var(--clr--very-dark-blue);
+        height: 20px;
+        border-radius: 20px;
+        &_point {
+          top: 5px;
+          background: var(--clr--gradient);
+          border-radius: 20px;
+          height: 15px;
+          margin: 3px;
+        }
+      }
+    }
+
     &_freespace {
       margin-bottom: -70px;
       margin-inline: auto;

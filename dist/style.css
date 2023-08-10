@@ -75,7 +75,11 @@ ul {
 
 :root {
   /* Primary Colors */
-  --clr--gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --clr--gradient: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
   /* Neutral Colors */
   --clr--pale-blue: hsl(243, 100%, 93%);
   --clr--grayish-blue: hsl(229, 7%, 55%);
@@ -158,6 +162,18 @@ body {
   display: flex;
   justify-content: space-between;
   font-weight: var(--fw--very-bold);
+}
+.card__info_range_indicator {
+  background-color: var(--clr--very-dark-blue);
+  height: 20px;
+  border-radius: 20px;
+}
+.card__info_range_indicator_point {
+  top: 5px;
+  background: var(--clr--gradient);
+  border-radius: 20px;
+  height: 15px;
+  margin: 3px;
 }
 .card__info_freespace {
   margin-bottom: -70px;

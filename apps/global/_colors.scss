@@ -1,6 +1,10 @@
 :root {
   /* Primary Colors */
-  --clr--gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --clr--gradient: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
 
   /* Neutral Colors */
   --clr--pale-blue: hsl(243, 100%, 93%);
