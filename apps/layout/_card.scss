@@ -9,14 +9,14 @@
   &__header,
   &__info {
     display: grid;
-
     background-color: var(--clr--dark-blue);
-    padding: 2rem;
+    padding: 3rem;
     text-align: left;
     border-radius: 0.8rem;
   }
 
   &__header {
+    border-top-right-radius: 7rem;
     gap: 2rem;
     .logo {
       img {
@@ -58,15 +58,26 @@
 
     &_range {
       &_indicator {
+        display: flex;
+        align-items: center;
         background-color: var(--clr--very-dark-blue);
         height: 20px;
         border-radius: 20px;
         &_point {
-          top: 5px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          width: 75%;
           background: var(--clr--gradient);
           border-radius: 20px;
-          height: 15px;
-          margin: 3px;
+          height: 16px;
+          margin: 2px;
+          &_ball {
+            background-color: var(--clr--pale-blue);
+            height: 16px;
+            width: 16px;
+            border-radius: 16px;
+          }
         }
       }
     }
