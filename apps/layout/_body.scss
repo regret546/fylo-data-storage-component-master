@@ -7,3 +7,15 @@ body {
   font-family: var(--ff--primary);
   font-size: var(--fs--regular);
 }
+
+@media only screen and (min-width: 992px) {
+  body {
+    background: url("/images/bg-desktop.png") no-repeat;
+    background-position: bottom;
+    background-size: 100% 450px;
+    background-color: var(--clr--very-dark-blue);
+    color: var(--clr--pale-blue);
+    font-family: var(--ff--primary);
+    font-size: var(--fs--regular);
+  }
+}

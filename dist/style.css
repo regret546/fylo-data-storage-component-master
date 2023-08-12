@@ -112,12 +112,22 @@ body {
   font-size: var(--fs--regular);
 }
 
+@media only screen and (min-width: 992px) {
+  body {
+    background: url("/images/bg-desktop.png") no-repeat;
+    background-position: bottom;
+    background-size: 100% 450px;
+    background-color: var(--clr--very-dark-blue);
+    color: var(--clr--pale-blue);
+    font-family: var(--ff--primary);
+    font-size: var(--fs--regular);
+  }
+}
 .card {
   display: grid;
-  grid-template-columns: minmax(0, 500px);
+  grid-template-columns: minmax(0, 700px);
   gap: 1rem;
   min-width: 0;
-  max-width: 500px;
   margin: 1.5rem;
 }
 .card__header, .card__info {
@@ -206,6 +216,38 @@ body {
   margin-left: 1rem;
 }
 
+@media only screen and (min-width: 992px) {
+  .card {
+    align-items: flex-end;
+    max-width: 900px;
+    grid-auto-flow: column;
+    grid-template-columns: 350px 550px;
+  }
+  .card__info {
+    position: relative;
+    height: 75%;
+  }
+  .card__info_freespace {
+    padding: 0.7rem;
+    margin-top: -50px;
+    position: absolute;
+    right: 30px;
+  }
+  .card__info_freespace h2 {
+    font-size: 30px;
+  }
+  .card__info_freespace h2 span {
+    margin-left: 0.8rem;
+  }
+  .card__info_freespace .triangle {
+    position: absolute;
+    display: block;
+    bottom: -15px;
+    right: 0;
+    border-left: 26px solid transparent;
+    border-top: 26px solid var(--clr--pale-blue);
+  }
+}
 .container {
   min-height: 100vh;
   display: grid;
