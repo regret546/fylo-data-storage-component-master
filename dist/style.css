@@ -227,6 +227,9 @@ body {
     position: relative;
     height: 75%;
   }
+  .card__info p {
+    text-align: left;
+  }
   .card__info_freespace {
     padding: 0.7rem;
     margin-top: -50px;
